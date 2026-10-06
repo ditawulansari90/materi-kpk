@@ -121,4 +121,354 @@
             <div class="space-y-6">
                 <!-- SOAL A1 -->
                 <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
-                    <
+                    <p class="font-bold text-slate-800 mb-3">1. Tuliskan 10 kelipatan pertama dari angka <b>6</b>:</p>
+                    <div class="flex flex-wrap gap-2" id="containerA1"></div>
+                </div>
+
+                <!-- SOAL A2 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <p class="font-bold text-slate-800 mb-3">2. Tuliskan 10 kelipatan pertama dari angka <b>8</b>:</p>
+                    <div class="flex flex-wrap gap-2" id="containerA2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PART B: KELIPATAN PERSEKUTUAN -->
+        <section class="bg-white p-6 rounded-2xl shadow-md border-2 border-indigo-200">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-indigo-700 flex items-center gap-2">
+                    <i class="fa-solid fa-object-group"></i> PART B: Kelipatan Persekutuan (2 Soal)
+                </h2>
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Skor Maks: 40</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-6">Jabarkan kelipatan masing-masing bilangan pada kotak yang tersedia, lalu tentukan 2 kelipatan persekutuannya!</p>
+
+            <div class="space-y-8">
+                <!-- SOAL B1 -->
+                <div class="p-4 bg-indigo-50/50 rounded-xl border border-indigo-200 space-y-4">
+                    <p class="font-bold text-indigo-900">1. Cari Kelipatan Persekutuan dari <b>5</b> dan <b>7</b>:</p>
+                    
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 block mb-1">Kelipatan 5 (Isi 14 Kotak):</span>
+                        <div class="flex flex-wrap gap-2" id="containerB1_5"></div>
+                    </div>
+
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 block mb-1">Kelipatan 7 (Isi 10 Kotak):</span>
+                        <div class="flex flex-wrap gap-2" id="containerB1_7"></div>
+                    </div>
+
+                    <div class="pt-2 border-t border-indigo-200">
+                        <span class="text-sm font-bold text-indigo-900 block mb-2">💡 Jadi, 2 Kelipatan Persekutuan dari 5 dan 7 adalah:</span>
+                        <div class="flex gap-2 items-center">
+                            <input type="number" id="b1_res_1" class="input-box border-indigo-300">
+                            <span class="font-bold text-slate-400">dan</span>
+                            <input type="number" id="b1_res_2" class="input-box border-indigo-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOAL B2 -->
+                <div class="p-4 bg-indigo-50/50 rounded-xl border border-indigo-200 space-y-4">
+                    <p class="font-bold text-indigo-900">2. Cari Kelipatan Persekutuan dari <b>6</b> dan <b>8</b>:</p>
+                    
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 block mb-1">Kelipatan 6 (Isi 9 Kotak):</span>
+                        <div class="flex flex-wrap gap-2" id="containerB2_6"></div>
+                    </div>
+
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 block mb-1">Kelipatan 8 (Isi 9 Kotak):</span>
+                        <div class="flex flex-wrap gap-2" id="containerB2_8"></div>
+                    </div>
+
+                    <div class="pt-2 border-t border-indigo-200">
+                        <span class="text-sm font-bold text-indigo-900 block mb-2">💡 Jadi, 2 Kelipatan Persekutuan dari 6 dan 8 adalah:</span>
+                        <div class="flex gap-2 items-center">
+                            <input type="number" id="b2_res_1" class="input-box border-indigo-300">
+                            <span class="font-bold text-slate-400">dan</span>
+                            <input type="number" id="b2_res_2" class="input-box border-indigo-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PART C: ANALISIS KPK (PILIHAN GANDA) -->
+        <section class="bg-white p-6 rounded-2xl shadow-md border-2 border-amber-200">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-amber-800 flex items-center gap-2">
+                    <i class="fa-solid fa-brain"></i> PART C: Analisis KPK (2 Soal)
+                </h2>
+                <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Skor Maks: 30</span>
+            </div>
+            <p class="text-sm text-slate-600 mb-6">Pilihlah jawaban KPK (Kelipatan Persekutuan Terkecil) berdasarkan analisis kamu pada Part B!</p>
+
+            <div class="space-y-6">
+                <!-- SOAL C1 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200" id="soalC1_wrapper">
+                    <p class="font-bold text-slate-800 mb-3">1. Berapakah Kelipatan Persekutuan Terkecil (KPK) dari <b>5 dan 7</b>?</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC1" value="70" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">A. 70</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC1" value="35" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">B. 35</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC1" value="12" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">C. 12</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC1" value="105" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">D. 105</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- SOAL C2 -->
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200" id="soalC2_wrapper">
+                    <p class="font-bold text-slate-800 mb-3">2. Berapakah Kelipatan Persekutuan Terkecil (KPK) dari <b>6 dan 8</b>?</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC2" value="48" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">A. 48</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC2" value="14" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">B. 14</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC2" value="24" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">C. 24</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-xl border cursor-pointer hover:bg-amber-50">
+                            <input type="radio" name="pgC2" value="2" class="w-4 h-4 text-amber-600">
+                            <span class="ml-3 font-medium text-slate-700">D. 2</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOMBOL HITUNG -->
+        <section class="text-center">
+            <button onclick="hitungNilai()" class="bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-700 hover:to-indigo-700 text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg transform active:scale-95 transition">
+                <i class="fa-solid fa-calculator mr-2"></i> Periksa Jawaban & Hitung Nilai
+            </button>
+        </section>
+
+        <!-- 6. LAPORAN HASIL & SETOR KE GURU -->
+        <section id="hasilSection" class="bg-gradient-to-br from-sky-100 to-indigo-100 p-6 rounded-2xl border-4 border-sky-400 shadow-xl hidden space-y-6">
+            <div class="text-center space-y-3">
+                <h3 class="text-2xl font-black text-sky-900">
+                    <i class="fa-solid fa-trophy text-amber-500 mr-2"></i> Laporan Hasil LKPD Matematika
+                </h3>
+                <p class="text-slate-700 font-semibold" id="ringkasanSiswa"></p>
+                <div class="my-2 inline-block bg-white px-8 py-4 rounded-3xl border-4 border-sky-300 shadow-md">
+                    <span class="text-sm text-slate-500 font-bold block uppercase">Total Nilai Kamu</span>
+                    <span class="text-5xl font-black text-sky-600" id="totalSkor">0</span>
+                    <span class="text-slate-400 font-bold text-xl">/ 100</span>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-2 border-sky-400 shadow-sm max-w-md mx-auto space-y-3">
+                    <h4 class="font-bold text-slate-800 text-base">Setorkan Nilai ke Google Sheets Guru</h4>
+                    <button id="btnKirimGuru" onclick="kirimKeGuru()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-lg py-3 px-6 rounded-xl shadow transition">
+                        🚀 Kirim Laporan Nilai ke Guru
+                    </button>
+                    <p id="statusKirim" class="font-bold text-sm min-h-[20px]"></p>
+                </div>
+            </div>
+
+            <!-- KUNCI JAWABAN & PEMBAHASAN -->
+            <div class="bg-white p-6 rounded-2xl border-2 border-sky-300 shadow-sm space-y-4">
+                <h4 class="text-lg font-bold text-sky-800 border-b-2 border-sky-100 pb-2">
+                    <i class="fa-solid fa-book-open mr-2"></i> Pembahasan & Kunci Jawaban
+                </h4>
+                
+                <div class="space-y-3 text-sm text-slate-700">
+                    <div class="p-3 bg-sky-50 rounded-lg">
+                        <p class="font-bold text-sky-900">Part A (Kelipatan Bilangan):</p>
+                        <p class="text-emerald-700 font-semibold">1. Kelipatan 6: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60</p>
+                        <p class="text-emerald-700 font-semibold">2. Kelipatan 8: 8, 16, 24, 32, 40, 48, 56, 64, 72, 80</p>
+                    </div>
+
+                    <div class="p-3 bg-indigo-50 rounded-lg">
+                        <p class="font-bold text-indigo-900">Part B (Kelipatan Persekutuan):</p>
+                        <p class="text-emerald-700 font-semibold">1. Kelipatan Persekutuan 5 dan 7: 35 dan 70</p>
+                        <p class="text-xs text-slate-500">Angka 35 dan 70 adalah angka yang sama-sama muncul pada kelipatan 5 dan 7.</p>
+                        <p class="text-emerald-700 font-semibold mt-1">2. Kelipatan Persekutuan 6 dan 8: 24 dan 48</p>
+                        <p class="text-xs text-slate-500">Angka 24 dan 48 adalah angka yang sama-sama muncul pada kelipatan 6 dan 8.</p>
+                    </div>
+
+                    <div class="p-3 bg-amber-50 rounded-lg">
+                        <p class="font-bold text-amber-900">Part C (Analisis KPK):</p>
+                        <p class="text-emerald-700 font-semibold">1. KPK dari 5 dan 7 adalah 35</p>
+                        <p class="text-xs text-slate-500"><b>Pembahasan:</b> Kelipatan persekutuannya adalah 35 dan 70. Karena KPK mencari yang <b>terkecil</b>, maka jawabannya 35.</p>
+                        <p class="text-emerald-700 font-semibold mt-2">2. KPK dari 6 dan 8 adalah 24</p>
+                        <p class="text-xs text-slate-500"><b>Pembahasan:</b> Kelipatan persekutuannya adalah 24 dan 48. Angka yang paling kecil adalah 24.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzXZQcWGKAYLbz9X9O2_-Qs4mIlvtf9M0xlMa-0ZwxuRBmoE9dhjmXDyGjEUAxMpEHe/exec";
+
+        const ansA1 = [6, 12, 18, 24, 30, 36, 42, 48, 54, 60];
+        const ansA2 = [8, 16, 24, 32, 40, 48, 56, 64, 72, 80];
+
+        const ansB1_5 = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70];
+        const ansB1_7 = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70];
+
+        const ansB2_6 = [6, 12, 18, 24, 30, 36, 42, 48, 54];
+        const ansB2_8 = [8, 16, 24, 32, 40, 48, 56, 64, 72];
+
+        let totalSkorAkhir = 0;
+
+        function renderBoxes(containerId, count, prefix) {
+            const container = document.getElementById(containerId);
+            let html = "";
+            for (let i = 0; i < count; i++) {
+                html += `<input type="number" id="${prefix}_${i}" class="input-box">`;
+            }
+            container.innerHTML = html;
+        }
+
+        window.onload = function() {
+            renderBoxes("containerA1", 10, "a1");
+            renderBoxes("containerA2", 10, "a2");
+
+            renderBoxes("containerB1_5", 14, "b1_5");
+            renderBoxes("containerB1_7", 10, "b1_7");
+
+            renderBoxes("containerB2_6", 9, "b2_6");
+            renderBoxes("containerB2_8", 9, "b2_8");
+        };
+
+        function evaluateArrayInputs(prefix, targetArray) {
+            let correctCount = 0;
+            targetArray.forEach((val, idx) => {
+                const el = document.getElementById(`${prefix}_${idx}`);
+                if (el) {
+                    const userVal = parseInt(el.value);
+                    if (userVal === val) {
+                        el.className = "input-box correct-box";
+                        correctCount++;
+                    } else {
+                        el.className = "input-box wrong-box";
+                    }
+                }
+            });
+            return correctCount;
+        }
+
+        function hitungNilai() {
+            const nama = document.getElementById("inputNama").value;
+            if (!nama) {
+                alert("Silakan pilih nama siswa terlebih dahulu di bagian atas!");
+                document.getElementById("inputNama").focus();
+                return;
+            }
+
+            let scoreA = 0;
+            let scoreB = 0;
+            let scoreC = 0;
+
+            const countA1 = evaluateArrayInputs("a1", ansA1);
+            const countA2 = evaluateArrayInputs("a2", ansA2);
+            scoreA = Math.round((countA1 / 10) * 15) + Math.round((countA2 / 10) * 15);
+
+            const countB1_5 = evaluateArrayInputs("b1_5", ansB1_5);
+            const countB1_7 = evaluateArrayInputs("b1_7", ansB1_7);
+            const b1_r1 = document.getElementById("b1_res_1");
+            const b1_r2 = document.getElementById("b1_res_2");
+            let b1ResCorrect = 0;
+            if (parseInt(b1_r1.value) === 35) { b1_r1.className = "input-box border-indigo-300 correct-box"; b1ResCorrect++; } else { b1_r1.className = "input-box border-indigo-300 wrong-box"; }
+            if (parseInt(b1_r2.value) === 70) { b1_r2.className = "input-box border-indigo-300 correct-box"; b1ResCorrect++; } else { b1_r2.className = "input-box border-indigo-300 wrong-box"; }
+
+            let subScoreB1 = ((countB1_5 / 14) * 8) + ((countB1_7 / 10) * 8) + (b1ResCorrect * 2);
+
+            const countB2_6 = evaluateArrayInputs("b2_6", ansB2_6);
+            const countB2_8 = evaluateArrayInputs("b2_8", ansB2_8);
+            const b2_r1 = document.getElementById("b2_res_1");
+            const b2_r2 = document.getElementById("b2_res_2");
+            let b2ResCorrect = 0;
+            if (parseInt(b2_r1.value) === 24) { b2_r1.className = "input-box border-indigo-300 correct-box"; b2ResCorrect++; } else { b2_r1.className = "input-box border-indigo-300 wrong-box"; }
+            if (parseInt(b2_r2.value) === 48) { b2_r2.className = "input-box border-indigo-300 correct-box"; b2ResCorrect++; } else { b2_r2.className = "input-box border-indigo-300 wrong-box"; }
+
+            let subScoreB2 = ((countB2_6 / 9) * 8) + ((countB2_8 / 9) * 8) + (b2ResCorrect * 2);
+
+            scoreB = Math.round(subScoreB1 + subScoreB2);
+
+            const selC1 = document.querySelector('input[name="pgC1"]:checked');
+            const wrapC1 = document.getElementById("soalC1_wrapper");
+            if (selC1 && selC1.value === "35") {
+                scoreC += 15;
+                wrapC1.className = "p-4 rounded-xl border-2 border-emerald-400 bg-emerald-50";
+            } else {
+                wrapC1.className = "p-4 rounded-xl border-2 border-red-400 bg-red-50";
+            }
+
+            const selC2 = document.querySelector('input[name="pgC2"]:checked');
+            const wrapC2 = document.getElementById("soalC2_wrapper");
+            if (selC2 && selC2.value === "24") {
+                scoreC += 15;
+                wrapC2.className = "p-4 rounded-xl border-2 border-emerald-400 bg-emerald-50";
+            } else {
+                wrapC2.className = "p-4 rounded-xl border-2 border-red-400 bg-red-50";
+            }
+
+            totalSkorAkhir = scoreA + scoreB + scoreC;
+            if (totalSkorAkhir > 100) totalSkorAkhir = 100;
+
+            document.getElementById("totalSkor").innerText = totalSkorAkhir;
+            document.getElementById("ringkasanSiswa").innerText = `Siswa: ${nama} | Kelas: ${document.getElementById("inputKelas").value}`;
+            
+            const hasilSec = document.getElementById("hasilSection");
+            hasilSec.classList.remove("hidden");
+            hasilSec.scrollIntoView({ behavior: "smooth" });
+        }
+
+        function kirimKeGuru() {
+            const nama = document.getElementById("inputNama").value;
+            const kelas = document.getElementById("inputKelas").value;
+            const status = document.getElementById("statusKirim");
+            const btnKirim = document.getElementById("btnKirimGuru");
+
+            status.style.color = "blue";
+            status.innerText = "Sedang mengirim data ke guru...";
+            btnKirim.disabled = true;
+
+            const payload = {
+                namaSiswa: nama,
+                kelas: kelas,
+                mataPelajaran: "Matematika",
+                namaTugas: "LKPD Kelipatan, Kelipatan Persekutuan, dan KPK",
+                nilai: totalSkorAkhir
+            };
+
+            fetch(SCRIPT_URL, {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            })
+            .then(() => {
+                status.style.color = "green";
+                status.innerText = "✅ Berhasil! Nilai sudah masuk ke rekap Google Sheets guru.";
+                btnKirim.disabled = false;
+            })
+            .catch(err => {
+                status.style.color = "red";
+                status.innerText = "❌ Gagal mengirim. Periksa koneksi internet.";
+                btnKirim.disabled = false;
+            });
+        }
+    </script>
+</body>
+</html>
